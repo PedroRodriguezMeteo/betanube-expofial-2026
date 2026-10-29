@@ -627,22 +627,15 @@
         <div>
           <span class="kicker">Tu experiencia también cuenta</span>
           <h2>¿Qué te pareció BetaNube?</h2>
-          <p>La degustación se realizó con malvaviscos elaborados con <strong>extracto T3</strong> por disponibilidad de pigmento. Durante la presentación, una encuesta breve puede recoger impresiones sobre <strong>color, sabor y textura</strong>. Esta página incluye una demostración visual del formulario; para recopilar respuestas de todos los visitantes, deberá conectarse a una herramienta como Google Forms.</p>
+          <p>La degustación se realizó con malvaviscos elaborados con <strong>extracto T3</strong> por disponibilidad de pigmento. Comparte tu opinión sobre el <strong>color, sabor y textura</strong>. Tus respuestas nos ayudan a mejorar la experiencia BetaNube.</p>
           <a class="btn btn-light" href="#inicio">Volver a conocer la marca ↑</a>
         </div>
         <div class="taste-card">
           <h3>Mini encuesta de degustación ♡</h3>
-          <span id="demoNotice" class="demo-note">Versión de demostración: las respuestas no se envían a un servidor. Para la feria, enlaza aquí tu formulario oficial.</span>
-          <div id="surveyFormArea">
-            <form id="tasteForm">
-              <div class="form-field"><label for="sabor">¿Cómo calificarías el sabor?</label><select id="sabor" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
-              <div class="form-field"><label for="color">¿Qué te pareció el color?</label><select id="color" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
-              <div class="form-field"><label for="textura">¿Cómo calificarías la textura?</label><select id="textura" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
-              <button class="btn" type="submit">Enviar valoración de prueba ♡</button>
-            </form>
-            <div id="thankYou" class="thankyou" role="status" aria-live="polite">¡Gracias por probar la experiencia! Esta es una demostración: la valoración no se almacenó ni se envió a los organizadores. <button id="again" type="button" class="btn btn-light" style="margin-top:12px;font-size:.8rem">Responder otra vez</button></div>
-          </div>
-          <a id="realSurvey" class="btn" href="#" target="_blank" rel="noopener noreferrer" style="display:none;width:100%">Abrir encuesta oficial ↗</a>
+          <p>Cuéntanos qué te pareció en tres preguntas rápidas. Valora el sabor, el color y la textura del 1 al 5.</p>
+          <p style="font-size:.9rem">La encuesta es anónima, no requiere iniciar sesión y toma menos de un minuto. Al enviarla, tu respuesta quedará registrada para el equipo BetaNube.</p>
+          <a id="realSurvey" class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSedtLSfcoGdJkLS1bWfiT97nQh5aDfWbpBXmcsTPDzTUyf_Rg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" style="width:100%">Responder encuesta ♡ ↗</a>
+          <p style="font-size:.8rem;margin:12px 0 0">Se abre en Google Forms en una nueva pestaña.</p>
         </div>
       </div>
     </section>
@@ -669,8 +662,6 @@
   </dialog>
   <script>
     'use strict';
-    // Para activar un enlace real a una encuesta pública, coloca aquí la URL de tu Google Forms.
-    const ENCUESTA_URL = '';
     const dry = [2.07,5.21,10.73,13.36];
     const liter = [30.22,76.16,1046.63,1322.61];
     const fmt = n => n.toLocaleString('es-PE',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -724,20 +715,6 @@
     const menuToggle=document.getElementById('menuToggle'),menu=document.getElementById('mainNav');
     menuToggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');menuToggle.textContent=open?'✕':'☰';});
     menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');menuToggle.textContent='☰';}));
-    if(ENCUESTA_URL.trim()){
-      const link=document.getElementById('realSurvey');link.href=ENCUESTA_URL;link.style.display='inline-flex';
-      document.getElementById('surveyFormArea').style.display='none';
-      document.getElementById('demoNotice').textContent='Responde la encuesta de degustación en el formulario oficial del proyecto.';
-    }else{
-      document.getElementById('tasteForm').addEventListener('submit',(event)=>{
-        event.preventDefault();
-        if(!event.currentTarget.reportValidity())return;
-        event.currentTarget.style.display='none';document.getElementById('thankYou').style.display='block';
-      });
-      document.getElementById('again').addEventListener('click',()=>{
-        document.getElementById('tasteForm').reset();document.getElementById('tasteForm').style.display='block';document.getElementById('thankYou').style.display='none';
-      });
-    }
   </script>
 </body>
 </html>

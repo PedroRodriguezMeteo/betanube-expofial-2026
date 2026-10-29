@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7c184a">
+  <meta name="description" content="Descubre BetaNube: malvaviscos con colorante natural obtenido de cáscara de betarraga. Innovación alimentaria, aprovechamiento de residuos y ciencia para EXPOFIAL 2026.">
+  <title>BetaNube | Un color que nace de una cáscara</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='20' width='64' height='64' fill='%23aa125a'/%3E%3Ctext x='50%25' y='73%25' font-size='47' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'%3EB%3C/text%3E%3C/svg%3E">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+    :root{--wine:#68153d;--wine2:#4e1534;--pink:#b91464;--pink2:#e84f96;--rose:#fbe5ec;--blush:#fff4f7;--cream:#fffaf6;--ink:#30252e;--muted:#756471;--line:#efd8e0;--green:#578548;--white:#fff;--shadow:0 20px 60px rgba(114,20,71,.09)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{margin:0;background:#fffdfd;color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    body::selection{background:#f8cada;color:var(--wine)}
+    button,input,select{font:inherit}
+    button,a{-webkit-tap-highlight-color:transparent}
+    a{color:inherit;text-decoration:none}
+    :focus-visible{outline:3px solid var(--pink2);outline-offset:3px}
+    .wrap{width:min(1170px,calc(100% - 44px));margin-inline:auto}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip{position:absolute;left:8px;top:-100px;padding:10px;background:var(--wine);color:white;z-index:100}
+    .skip:focus{top:8px}
+    .topline{background:var(--wine);color:white;padding:8px 0;text-align:center;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+    .topline b{color:#ffb8d2}
+    .navbar{position:sticky;top:0;z-index:50;background:rgba(255,252,253,.94);border-bottom:1px solid rgba(146,57,89,.12);backdrop-filter:blur(16px)}
+    .navinner{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
+    .brand{display:inline-flex;align-items:center;gap:10px;font-family:'Fredoka','Arial Rounded MT Bold',system-ui,sans-serif;font-weight:700;font-size:1.55rem;letter-spacing:-.04em;color:var(--wine)}
+    .brandmark{display:grid;place-items:center;width:42px;height:42px;border-radius:17px 17px 13px 22px;background:linear-gradient(140deg,#f97db2,var(--pink));color:#fff;font-size:1.7rem;box-shadow:inset 0 2px 6px rgba(255,255,255,.3)}
+    .navlinks{display:flex;align-items:center;gap:24px;font-size:.83rem;font-weight:800;color:#614356}
+    .navlinks a:hover{color:var(--pink)}
+    .nav-cta{padding:11px 19px;border-radius:100px;background:var(--wine);color:white!important;transition:transform .2s,background .2s}
+    .nav-cta:hover{transform:translateY(-2px);background:var(--pink)}
+    .menu-toggle{display:none;align-items:center;justify-content:center;min-width:44px;min-height:44px;border-radius:13px;border:1px solid var(--line);background:#fff;color:var(--wine);font-size:1.5rem;cursor:pointer}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 21%,#ffe4ee 0 10%,transparent 35%),radial-gradient(circle at 8% 80%,#ffeff3,transparent 43%),linear-gradient(115deg,#fffafb,#fff6f8);border-bottom:1px solid #fce5eb}
+    .hero::before{content:'';position:absolute;width:510px;height:510px;right:-290px;top:-320px;border:90px solid #fee5ed;border-radius:50%;opacity:.7}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:38px;min-height:660px;padding:64px 0 72px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:50px;background:#fff;border:1px solid #f7dbe5;color:var(--wine);font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+    .dot{width:8px;height:8px;background:var(--pink2);border-radius:50%;box-shadow:0 0 0 4px #fde1ed}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:'Fredoka','Arial Rounded MT Bold',system-ui,sans-serif;line-height:1.1}
+    h1{font-size:clamp(3.05rem,5.65vw,5.75rem);font-weight:600;letter-spacing:-.06em;max-width:650px;margin:25px 0}
+    h1 em{font-style:normal;color:var(--pink);display:inline-block}
+    .hero-text{max-width:490px;color:#685461;font-size:1.08rem;line-height:1.77}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:47px;border:0;border-radius:50px;padding:12px 23px;background:var(--wine);color:white;font-size:.91rem;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(119,20,69,.18);background:var(--pink)}
+    .btn-light{background:white;color:var(--wine);border:1px solid #ead3df}
+    .btn-light:hover{background:#fff0f6;color:var(--wine)}
+    .hero-tags{display:flex;gap:12px;flex-wrap:wrap;padding:0;margin:26px 0 0;list-style:none}
+    .hero-tags li{font-size:.78rem;color:#866170;background:#fff;border:1px solid #f2dce5;border-radius:10px;padding:7px 12px;font-weight:700}
+    .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:500px}
+    .hero-orbit{position:absolute;width:93%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,white 0,#ffecf2 36%,#ffcbdc 65%,#f6aec9 100%);box-shadow:inset 0 -15px 32px rgba(190,40,100,.07),0 32px 60px rgba(179,25,83,.08)}
+    .hero-image{position:relative;display:block;width:min(98%,580px);height:auto;filter:drop-shadow(0 22px 16px rgba(117,34,70,.06));border-radius:42px;mix-blend-mode:multiply}
+    .float-label{position:absolute;z-index:2;display:flex;align-items:center;gap:7px;background:white;color:var(--wine);border:1px solid #f0cadc;box-shadow:0 10px 28px rgba(127,31,71,.13);padding:9px 14px;border-radius:50px;font-size:.8rem;font-weight:800}
+    .float-label.left{left:-16px;top:24%}.float-label.right{right:-15px;bottom:20%}
+    .section{padding:92px 0}
+    .section-heading{text-align:center;margin:0 auto 42px;max-width:760px}
+    .kicker{display:block;color:var(--pink);text-transform:uppercase;letter-spacing:.17em;font-size:.73rem;font-weight:900;margin-bottom:12px}
+    h2{font-size:clamp(2.1rem,3.7vw,3.35rem);font-weight:600;letter-spacing:-.04em;color:var(--wine);margin-bottom:12px}
+    .section-heading p,.lead{color:var(--muted);font-size:1.04rem;line-height:1.8}
+    .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .info-card{background:var(--white);border:1px solid var(--line);padding:29px 27px;border-radius:26px;box-shadow:0 8px 34px rgba(119,40,75,.035)}
+    .info-card h3{color:var(--wine);font-size:1.42rem;margin:18px 0 10px}
+    .info-card p{color:#75636e;font-size:.93rem;margin:0}
+    .round-icon{display:grid;place-items:center;width:60px;height:60px;border-radius:20px;background:#fff0f5;font-size:1.8rem}
+    .value-band{background:var(--wine);color:white;overflow:hidden;position:relative}
+    .value-band::before,.value-band::after{content:'';width:260px;height:260px;border-radius:50%;border:65px solid rgba(255,255,255,.06);position:absolute}
+    .value-band::before{left:-160px;top:-180px}.value-band::after{right:-135px;bottom:-170px}
+    .value-grid{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px;padding:44px 0}
+    .value-grid h2{color:#fff;font-size:clamp(1.75rem,3vw,2.7rem);margin:0}
+    .value-grid p{color:#ffe2ed;margin:0;font-size:.96rem}
+    .symbol{font-size:2rem;color:#ffb1ce}
+    .process{background:#fff5f8}
+    .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+    .step{position:relative;background:white;border:1px solid #f2d8e2;border-radius:24px;padding:22px 17px;min-height:215px}
+    .step:not(:last-child)::after{content:'→';position:absolute;right:-14px;top:42%;z-index:2;color:var(--pink);font-weight:900;font-size:1.6rem}
+    .step-num{display:grid;place-items:center;width:37px;height:37px;border-radius:100px;background:#fbe0eb;color:var(--wine);font-weight:900;font-family:'Fredoka',sans-serif}
+    .step-emoji{font-size:2.05rem;margin:17px 0 8px}
+    .step h3{font-size:1.14rem;color:var(--wine);margin-bottom:7px}
+    .step p{font-size:.83rem;color:#77606c;line-height:1.55;margin:0}
+    .process-note{max-width:800px;color:#856a78;font-size:.84rem;margin:24px auto 0;text-align:center}
+    .science-layout{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:45px;align-items:start}
+    .science-intro h2{margin:14px 0 14px}
+    .science-intro p{color:var(--muted);line-height:1.82}
+    .treatments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+    .treatment{padding:13px 14px;background:#fff7fa;border:1px solid #f3d9e2;border-radius:16px;font-size:.84rem;color:#715063}
+    .treatment strong{display:block;color:var(--wine);font-size:.95rem;margin-bottom:3px}
+    .data-card{border-radius:28px;background:white;border:1px solid var(--line);box-shadow:var(--shadow);padding:27px}
+    .data-head{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:9px;flex-wrap:wrap}
+    .data-head h3{font-size:1.45rem;color:var(--wine);margin:0}
+    .data-kicker{font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--pink)}
+    .segmented{display:inline-flex;padding:4px;border-radius:50px;background:#fff0f5;gap:3px}
+    .segmented button{background:transparent;border:0;padding:9px 13px;color:var(--wine);border-radius:50px;cursor:pointer;font-size:.79rem;font-weight:800;min-height:37px}
+    .segmented button[aria-pressed="true"]{background:var(--wine);color:white}
+    .chartrows{margin-top:25px;display:flex;flex-direction:column;gap:18px}
+    .chart-label{display:flex;justify-content:space-between;margin:0 0 8px;font-size:.82rem;font-weight:800;color:#674c5a}
+    .chart-label .numeric{font-variant-numeric:tabular-nums;color:var(--wine)}
+    .track{width:100%;height:13px;border-radius:50px;background:#fae7ee;overflow:hidden}
+    .bar{height:100%;background:linear-gradient(90deg,#f4a1c4,#c62070);border-radius:50px;min-width:3px;transition:width .45s ease}
+    .bar.best{background:linear-gradient(90deg,#c93f80,#821247)}
+    .best-note{margin-top:20px;background:#fff1f6;border:1px solid #f2cfdd;padding:13px 16px;border-radius:15px;color:#6c3150;font-size:.86rem}
+    .method-note{margin:14px 0 0;color:#987c8a;font-size:.72rem;line-height:1.6}
+    .product-section{background:linear-gradient(115deg,#fff9fb 0,#ffeaf0 100%)}
+    .product-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .product-art{display:grid;place-items:center;min-height:360px;border-radius:40px;overflow:hidden;background:radial-gradient(circle at 50% 40%,#ffe0e9 0,#f9bed3 56%,#ef91b4 100%);position:relative}
+    .puff{display:grid;place-items:center;width:198px;height:149px;border-radius:34% 30% 34% 36% / 39% 42% 31% 36%;background:linear-gradient(138deg,#ffe2ee,#ed82ac 70%,#ce4c80);border:10px solid rgba(255,255,255,.25);box-shadow:inset 7px 9px 15px rgba(255,255,255,.45),inset -10px -12px 20px rgba(149,17,69,.13),0 25px 34px rgba(115,17,64,.2);transform:rotate(-11deg);position:relative}
+    .puff::before{content:'';width:130px;height:10px;border-radius:50%;background:rgba(255,255,255,.35);position:absolute;top:25px;transform:rotate(-7deg)}
+    .puff small{font-size:3.5rem;color:#fff5f8;opacity:.9;text-shadow:0 2px 1px #e588b0;transform:rotate(11deg)}
+    .puff.second{position:absolute;right:20%;bottom:15%;transform:rotate(17deg) scale(.64);opacity:.9}
+    .floating-ingredient{position:absolute;top:15%;left:9%;border-radius:30px;color:var(--wine);font-weight:800;background:#fffafa;padding:8px 13px;font-size:.8rem;box-shadow:0 8px 30px #a2285d24}
+    .product-copy h2{margin:15px 0}.product-copy p{color:var(--muted);line-height:1.8}
+    .ticks{display:grid;gap:11px;padding:0;list-style:none;color:#60384d;font-weight:700;font-size:.94rem;margin:25px 0}
+    .ticks li{display:flex;align-items:start;gap:9px}.ticks i{display:grid;place-items:center;flex:none;width:22px;height:22px;border-radius:50%;font-style:normal;background:#f8cce0;color:#88264f;font-size:.75rem}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .faq-grid details{background:white;border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+    .faq-grid summary{cursor:pointer;color:var(--wine);font-weight:800;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .faq-grid summary::-webkit-details-marker{display:none}
+    .faq-grid summary::after{content:'+';font-size:1.6rem;font-weight:400;line-height:1}
+    .faq-grid details[open] summary::after{content:'−'}
+    .faq-grid details p{color:var(--muted);font-size:.9rem;line-height:1.7;margin:13px 0 0}
+    .taste{background:var(--cream)}
+    .taste-layout{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+    .taste-layout h2{margin-top:12px}.taste-layout p{color:var(--muted);line-height:1.8}
+    .taste-card{background:white;padding:28px;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}
+    .taste-card h3{font-size:1.6rem;color:var(--wine);margin-bottom:9px}
+    .taste-card .demo-note{display:block;font-size:.74rem;color:#806b77;line-height:1.6;padding:11px 14px;border-radius:12px;background:#fff3f7;margin-bottom:18px}
+    .form-field{margin:0 0 15px}
+    .form-field label{display:block;color:#60445a;font-size:.82rem;font-weight:800;margin:0 0 8px}
+    .form-field select{appearance:auto;min-height:45px;width:100%;padding:10px 11px;border-radius:11px;border:1px solid #ecd0dd;background:white;font-size:.96rem;color:var(--wine)}
+    .taste-card .btn{width:100%}
+    .thankyou{display:none;background:#f4f9f0;color:#305829;padding:18px;border:1px solid #cfdfc5;border-radius:17px;font-weight:700}
+    .references{padding:50px 0;border-top:1px solid #f4e5ea}
+    .references h2{font-size:1.55rem;color:var(--wine);margin-bottom:18px}
+    .references p{color:#7c6a76;font-size:.78rem;line-height:1.75;margin:0 0 8px}
+    .references a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+    footer{background:var(--wine2);color:#fff;padding:35px 0}
+    .footer-grid{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+    .footer-brand{font-family:'Fredoka',sans-serif;font-size:1.8rem;font-weight:700;letter-spacing:-.04em}
+    footer p{font-size:.82rem;color:#f6cdda;margin:3px 0 0}
+    .top-link{display:inline-flex;padding:10px 16px;border:1px solid #b87497;border-radius:100px;color:#fff;font-size:.82rem;font-weight:800}
+    @media(max-width:1000px){.navlinks{gap:15px}.hero-grid{gap:10px}.steps{grid-template-columns:repeat(3,minmax(0,1fr))}.step:nth-child(3)::after{content:none}.value-grid{grid-template-columns:1fr;gap:14px}.symbol{display:none}}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,1170px)}.navinner{min-height:67px}.menu-toggle{display:inline-flex}.navlinks{display:none;position:absolute;left:0;right:0;top:100%;padding:16px 21px 24px;background:#fffcfd;border-bottom:1px solid var(--line);box-shadow:0 15px 20px #5e193415;flex-direction:column;align-items:stretch;gap:3px}.navlinks.open{display:flex}.navlinks a{padding:13px 10px}.navlinks .nav-cta{text-align:center;margin-top:8px}.hero-grid{grid-template-columns:1fr;min-height:0;text-align:center;padding:51px 0 56px;gap:5px}.hero h1{margin:19px auto;font-size:clamp(3rem,9.3vw,4.6rem)}.hero-text{margin-inline:auto}.eyebrow{font-size:.68rem}.hero-actions,.hero-tags{justify-content:center}.hero-visual{min-height:0;padding:12px 0}.hero-image{width:min(92%,460px)}.hero-orbit{width:83%}.float-label{font-size:.68rem;padding:7px 9px}.float-label.left{left:0;top:24%}.float-label.right{right:0;bottom:18%}.section{padding:68px 0}.three,.science-layout,.product-layout,.taste-layout,.faq-grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.step:nth-child(3)::after{content:'→'}.step:nth-child(2)::after,.step:nth-child(4)::after{content:none}.product-layout{gap:27px}.product-art{min-height:300px}.taste-layout{gap:23px}.value-grid{padding:38px 0}.references{padding:37px 0}}
+    @media(max-width:470px){.topline{font-size:.64rem}.hero h1{font-size:3.03rem}.hero-tags{gap:7px}.hero-tags li{font-size:.7rem}.steps{grid-template-columns:1fr}.step{min-height:0;padding:18px 20px}.step:not(:last-child)::after{content:'↓';right:48%;top:auto;bottom:-19px}.step-emoji{margin:7px 0}.treatments{grid-template-columns:1fr}.data-card,.taste-card{padding:22px}.float-label.left{left:0;top:15%}.float-label.right{right:0;bottom:10%}.info-card{padding:24px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+    /* BetaNube 2026: heart wordmark and original laboratory photographs */
+    .hero-brand-card{position:relative;isolation:isolate;background:linear-gradient(150deg,#fff9fa,#ffeaf2);width:min(100%,575px);padding:25px;border:1px solid #f2d6e1;border-radius:35px;box-shadow:0 28px 65px #87274c1c;overflow:hidden}
+    .hero-wordmark{width:min(100%,470px);height:auto;display:block;margin:0 auto 18px;border-radius:15px;mix-blend-mode:multiply}
+    .hero-real-photos{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.85fr);gap:10px;height:260px;min-height:0;overflow:hidden}
+    .hero-real-photos img{display:block;width:100%;height:100%;min-height:0;min-width:0;max-height:100%;object-fit:cover;border-radius:17px}
+    .hero-real-photos>img{object-position:center 50%}
+    .hero-side-photos{display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:10px;min-height:0;overflow:hidden}
+    .hero-side-photos img{min-height:0}
+    .hero-real-caption{display:block;color:#89576c;text-align:center;font-size:.73rem;font-weight:800;margin-top:17px}
+    .photo-section{background:#fffafd}
+    .gallery-filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-bottom:28px}
+    .gallery-filter{border:1px solid #ecc7d6;background:#fff;border-radius:999px;padding:10px 17px;color:var(--wine);font-weight:800;cursor:pointer}
+    .gallery-filter.active,.gallery-filter:hover{background:var(--wine);color:white}
+    .photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .photo-card{border:1px solid #ebd4db;border-radius:18px;background:white;overflow:hidden;padding:0;display:flex;flex-direction:column;cursor:pointer;box-shadow:0 10px 22px #591f3510;text-align:left;color:inherit;transition:transform .17s,box-shadow .17s}
+    .photo-card:hover{transform:translateY(-3px);box-shadow:0 16px 28px #591f3522}
+    .photo-card[hidden]{display:none}
+    .photo-card img{display:block;width:100%;aspect-ratio:1.15;object-fit:cover}
+    .photo-caption{display:flex;flex-direction:column;gap:5px;padding:13px 14px 17px}
+    .photo-caption strong{font-size:.87rem;line-height:1.35;color:var(--wine)}
+    .photo-caption small{font-size:.74rem;color:#8e7784}
+    .photo-dialog{padding:15px;border:1px solid #e5c6d4;border-radius:20px;background:#fffcfd;color:var(--wine);width:min(90vw,810px);max-height:90%;box-shadow:0 18px 100px #4b203d77;overflow:auto}
+    .photo-dialog::backdrop{background:rgba(36,7,24,.75)}
+    .photo-dialog>img{width:100%;max-height:70vh;object-fit:contain;background:#fcebf1;border-radius:12px;display:block}
+    .photo-dialog-close{position:sticky;float:right;top:0;z-index:1;background:#fff;border:1px solid #e5bed0;border-radius:100%;width:38px;height:38px;color:var(--wine);cursor:pointer;font-size:1.65rem}
+    .photo-dialog-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:13px 5px 0}
+    .photo-dialog-footer div:first-child{display:flex;flex-direction:column;gap:4px}
+    .photo-dialog-footer span{font-size:.81rem;color:#896e7e}
+    .photo-dialog-buttons{display:flex;gap:7px}
+    .photo-dialog-buttons button{border:1px solid #e8c4d3;border-radius:12px;background:white;color:var(--wine);width:42px;height:42px;cursor:pointer;font-size:1.3rem}
+    .color-section{background:linear-gradient(160deg,#fff5f8,#fff)}
+    .color-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .color-panel{min-width:0;border:1px solid #efd5df;border-radius:23px;padding:23px;background:white;box-shadow:0 8px 23px #6c204a0a}
+    .color-panel h3{font-size:1.33rem;color:var(--wine);margin:0 0 15px}
+    .table-scroll{overflow-x:auto}
+    .scientific-table{width:100%;border-collapse:collapse;font-size:.84rem;font-variant-numeric:tabular-nums}
+    .scientific-table th,.scientific-table td{border-bottom:1px solid #efdde5;padding:10px 9px;text-align:right;white-space:nowrap}
+    .scientific-table th:first-child,.scientific-table td:first-child{text-align:left}
+    .scientific-table thead th{background:#fae8ef;color:#742444}
+    .scientific-table tbody th{color:#6b324e;font-weight:800}
+    .scientific-table .tasting-row{background:#fff0f5}
+    .color-footnote{color:#8b7480;font-size:.78rem;line-height:1.6;margin:15px 0 0}
+    .science-legend{border:1px solid #eed1df;background:#fff;padding:18px;border-radius:17px;margin-top:22px;font-size:.87rem;color:#6b5563}
+    .pigment-details{margin-top:14px;border:1px solid #f3d6e0;border-radius:14px;padding:11px 13px}
+    .pigment-details summary{cursor:pointer;color:var(--wine);font-size:.83rem;font-weight:800}
+    .pigment-details .table-scroll{margin:15px 0 8px}
+    .pigment-details .scientific-table{font-size:.73rem}
+    .pigment-details p{font-size:.72rem;color:#8a7180;line-height:1.5}
+    @media(max-width:1000px){.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:760px){.hero-brand-card{max-width:500px;padding:18px}.hero-real-photos{height:240px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.color-layout{grid-template-columns:1fr}}
+    @media(max-width:470px){.hero-real-photos{height:200px}.photo-grid{gap:10px}.photo-caption{padding:11px}.photo-caption strong{font-size:.79rem}.gallery-filter{padding:8px 12px;font-size:.77rem}.color-panel{padding:14px}.scientific-table{font-size:.72rem}.scientific-table th,.scientific-table td{padding:9px 5px}}
+
+    /* Valorización de cáscara: nueva sección con fotografía real y comparación de humedad */
+    .residue-section{background:linear-gradient(180deg,#fff9fb 0%,#fff 85%);border-bottom:1px solid #f3e0e8}
+    .residue-heading{max-width:865px;margin:0 auto 38px;text-align:center}
+    .residue-heading h2{font-size:clamp(2.3rem,4.2vw,4rem);letter-spacing:-.035em;color:var(--wine);margin:13px 0}
+    .residue-heading h2 em{font-style:normal;color:#b71965}
+    .residue-heading p{font-size:1.04rem;color:#765b69;max-width:760px;margin-inline:auto;line-height:1.7}
+    .residue-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.12fr);align-items:start;gap:42px}
+    .residue-visual{min-width:0;position:relative;padding-bottom:46px}
+    .real-peel-photo{margin:0;background:#fff;border-radius:27px;overflow:hidden;border:1px solid #f1d4e0;box-shadow:0 23px 45px rgba(114,20,71,.10)}
+    .real-peel-photo img{width:100%;height:auto;aspect-ratio:1.05;object-fit:cover;object-position:center 30%;display:block}
+    .real-peel-photo figcaption{padding:13px 16px 53px;font-size:.79rem;color:var(--wine);font-weight:800;line-height:1.35}
+    .evidence-dot{display:inline-block;width:7px;height:7px;background:#a83971;border-radius:50%;margin-right:6px}
+    .external-photo{margin:0;position:relative;width:72%;margin:-42px 0 0 auto;background:#fff;padding:13px 12px 9px;border:1px solid #f0d0dc;border-radius:16px;box-shadow:0 18px 32px #6b2a4c16}
+    .external-photo img{display:block;width:100%;height:auto;aspect-ratio:2.5;object-fit:contain;background:#fff}
+    .external-photo .offline-fallback,.external-photo .offline-credit{display:none}
+    .external-photo.external-unavailable .offline-fallback{display:block;object-fit:cover;aspect-ratio:2.4}
+    .external-photo.external-unavailable .external-photo-actual,.external-photo.external-unavailable .online-credit{display:none}
+    .external-photo.external-unavailable .offline-credit{display:inline}
+    .external-photo figcaption{font-size:.65rem;line-height:1.45;color:#8d6c7a;padding-top:9px}
+    .external-photo figcaption a{color:#854260;text-decoration:underline;text-underline-offset:2px}
+    .residue-info{min-width:0}
+    .soft-eyebrow{background:#fce8ef}
+    .residue-info h3{color:var(--wine);font-size:clamp(1.7rem,2.3vw,2.55rem);margin:14px 0 12px}
+    .residue-info>p{color:#73596a;line-height:1.75}
+    .moisture-evidence{border:1px solid #e8c9d6;background:#fff;border-radius:21px;padding:21px 24px;margin:22px 0;box-shadow:0 8px 21px #62133a0d}
+    .moisture-title{display:flex;align-items:center;gap:9px;color:var(--wine);font-size:.96rem;margin-bottom:15px}
+    .check-icon{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#d8ebd5;color:#356a46;font-size:.85rem}
+    .moisture-measure+.moisture-measure{margin-top:14px}
+    .moisture-label{display:flex;justify-content:space-between;gap:14px;font-size:.85rem;margin-bottom:6px;color:#795566}
+    .moisture-label strong{font-size:1rem;color:#7c1749;font-variant-numeric:tabular-nums}
+    .meter-track{height:12px;background:#f7eaf0;border-radius:999px;overflow:hidden}
+    .meter-track>span{display:block;height:100%;border-radius:999px}
+    .meter-fresh{background:#a52161}
+    .meter-dry{background:#6eac75;min-width:6px}
+    .moisture-caption{font-size:.72rem;color:#9b788a;margin:12px 0 0;line-height:1.5}
+    .residue-benefits{display:grid;gap:12px}
+    .residue-benefit{display:flex;gap:12px;align-items:flex-start;padding:15px 16px;border:1px solid #f2d9e2;background:linear-gradient(100deg,#fff8fa,#fff);border-radius:16px}
+    .residue-benefit>span{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;background:#fbe9ee;border-radius:11px;font-size:1.1rem}
+    .residue-benefit strong{display:block;color:#68153d;line-height:1.25;font-size:.91rem}
+    .residue-benefit p{font-size:.83rem;color:#765966;margin:5px 0 0;line-height:1.55}
+    .residue-caveat{font-size:.77rem;line-height:1.55;border-left:3px solid #a64c77;padding-left:13px;margin:19px 0 0!important;color:#816473}
+    .cycle-ribbon{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:18px;border-radius:18px;background:#faeaf1;color:#71204a;padding:16px 20px;font-size:.88rem;font-weight:800;text-align:center}
+    .cycle-ribbon span:nth-child(even){font-weight:800;color:#c6548b}
+    @media(max-width:900px){.residue-layout{grid-template-columns:1fr;gap:23px}.residue-visual{width:min(100%,560px);margin:auto;padding-bottom:10px}}
+    @media(max-width:470px){.residue-heading{margin-bottom:23px}.residue-info h3{font-size:1.85rem}.moisture-evidence{padding:18px}.external-photo{width:78%;margin-top:-40px}.cycle-ribbon{gap:8px;font-size:.76rem}.real-peel-photo img{aspect-ratio:1.1}}
+  
+    /* Sección de impacto y cifras ambientales con fuentes identificadas */
+    .impact-section{background:linear-gradient(180deg,#fff9fb,#fff 78%)}
+    .impact-intro{max-width:885px;margin:0 auto 27px;text-align:center}
+    .impact-intro h2{font-size:clamp(2.45rem,5vw,4.5rem);color:var(--wine);margin:14px auto 14px;letter-spacing:-.045em}
+    .impact-intro h2 em{font-style:normal;color:#b61663}
+    .impact-intro p{font-size:1.06rem;color:#715968;line-height:1.75;max-width:800px;margin:auto}
+    .impact-photo{position:relative;margin:0;border-radius:27px;overflow:hidden;min-height:370px;background:#63283d;box-shadow:0 20px 46px #5b193828}
+    .impact-photo>img{display:block;width:100%;height:clamp(390px,39vw,535px);object-fit:cover;object-position:center 56%}
+    .impact-photo-shade{position:absolute;inset:0 0 46px 0;background:linear-gradient(90deg,rgba(32,12,24,.75),rgba(47,14,26,.38) 40%,transparent 85%);pointer-events:none}
+    .impact-photo-copy{position:absolute;left:45px;bottom:100px;width:min(560px,76%);color:#fff;text-shadow:0 2px 16px #25101c75}
+    .impact-photo-copy span{font-size:.74rem;letter-spacing:.2em;font-weight:800;display:block;margin-bottom:12px}
+    .impact-photo-copy strong{font-family:'Fredoka',system-ui,sans-serif;font-size:clamp(2rem,3.8vw,3.9rem);line-height:1.08;display:block;max-width:540px;font-weight:600}
+    .impact-photo figcaption{font-size:.73rem;line-height:1.4;min-height:46px;padding:12px 20px;color:#6b4a5b;background:#fff8fa;position:relative}
+    .impact-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:23px 0 52px}
+    .impact-stat{min-width:0;background:#fff;border:1px solid #f1d7e2;border-radius:22px;padding:24px 23px 21px;box-shadow:0 8px 22px #8a3b6010}
+    .impact-stat-project{background:#fff2f7;border-color:#efbad0}
+    .stat-tag{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#9e416c;line-height:1.4}
+    .impact-stat>strong{display:block;color:#82163f;font-family:'Fredoka',sans-serif;font-size:clamp(2.7rem,4vw,4.2rem);line-height:1.12;margin:13px 0 5px;letter-spacing:-.035em;font-weight:650}
+    .impact-stat h3{font-size:1.23rem;line-height:1.22;margin:0 0 10px;color:#62223f}
+    .impact-stat p{font-size:.86rem;line-height:1.65;color:#735565;margin:0 0 14px}
+    .impact-stat a{display:inline-flex;color:#9a245b;font-weight:800;text-decoration:underline;text-underline-offset:3px;font-size:.78rem}
+    .impact-proof-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.07fr);gap:39px;align-items:center}
+    .impact-realphoto{margin:0;background:#fff;overflow:hidden;border-radius:23px;border:1px solid #f1d6e2;box-shadow:0 18px 39px #5a143024}
+    .impact-realphoto>img{display:block;width:100%;height:510px;object-fit:cover;object-position:center 37%}
+    .impact-realphoto figcaption{padding:16px 17px;color:#77415d;font-size:.83rem;font-weight:800;line-height:1.45;background:#fff}
+    .impact-why h3{color:#67153c;font-size:clamp(2rem,3vw,2.85rem);margin:15px 0 12px}
+    .impact-why>p{font-size:.96rem;color:#725362;line-height:1.7}
+    .impact-benefits{display:grid;gap:8px}
+    .impact-benefits>div{display:grid;grid-template-columns:33px minmax(0,1fr);column-gap:10px;row-gap:3px;background:#fff7fa;border:1px solid #f1dce4;border-radius:12px;padding:11px 13px}
+    .impact-benefits span{grid-row:span 2;font-size:1.18rem}
+    .impact-benefits strong{font-size:.88rem;color:#6d1d45}
+    .impact-benefits small{font-size:.78rem;line-height:1.45;color:#805a6b}
+    .impact-process{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:center;margin:38px 0 10px;background:#fff1f6;border:1px solid #f2d6e0;border-radius:24px;padding:18px}
+    .impact-process figure{margin:0;overflow:hidden;border-radius:16px}
+    .impact-process img{height:196px;width:100%;object-fit:cover;display:block}
+    .impact-process figcaption{padding:8px 0;font-size:.68rem;color:#835d6d}
+    .impact-process h3{font-size:clamp(1.5rem,2.3vw,2.2rem);color:#67153d;margin:8px 0}
+    .impact-process p{font-size:.88rem;color:#765262;line-height:1.6;margin-bottom:0}
+    .impact-footnote{font-size:.75rem;color:#806371;line-height:1.55;margin-top:22px;padding:13px 15px;background:#fff;border-left:3px solid #b94a7b}
+    @media(max-width:900px){.impact-stats{grid-template-columns:1fr;gap:12px}.impact-stat{padding:19px 20px}.impact-stat>strong{font-size:3.4rem}.impact-proof-grid{grid-template-columns:1fr;gap:24px}.impact-realphoto{max-width:600px;width:100%;margin:auto}.impact-realphoto>img{height:auto;aspect-ratio:1.05;object-fit:cover}.impact-process{grid-template-columns:220px 1fr}}
+    @media(max-width:620px){.impact-photo{border-radius:19px}.impact-photo>img{height:345px}.impact-photo-shade{inset:0 0 62px 0;background:linear-gradient(0deg,rgba(34,10,26,.78) 0,rgba(34,10,26,.1) 85%)}.impact-photo-copy{left:20px;bottom:93px;width:calc(100% - 40px)}.impact-photo-copy strong{font-size:2.25rem}.impact-photo figcaption{font-size:.67rem;min-height:62px}.impact-stats{margin:15px 0 38px}.impact-stat>strong{font-size:3rem}.impact-process{grid-template-columns:1fr;padding:14px;gap:12px}.impact-process img{height:180px}.impact-why h3{font-size:2rem}.impact-intro h2{font-size:2.55rem}.impact-intro p{font-size:.96rem}.impact-stats h3{font-size:1.25rem}}
+</style>
+</head>
+<body>
+  <a href="#contenido" class="skip">Ir al contenido</a>
+  <div class="topline">EXPOFIAL <b>2026</b> · Innovación en industrias alimentarias</div>
+  <header class="navbar">
+    <div class="wrap navinner">
+      <a href="#inicio" class="brand" aria-label="BetaNube, ir al inicio"><span class="brandmark" aria-hidden="true">B</span> BetaNube</a>
+      <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">☰</button>
+      <nav id="mainNav" class="navlinks" aria-label="Navegación principal">
+        <a href="#descubre">El producto</a>
+        <a href="#valorizacion">El residuo</a>
+        <a href="#proceso">El proceso</a>
+        <a href="#galeria">Fotografías</a>
+        <a href="#ciencia">La ciencia</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav-cta" href="#degustacion">Tu opinión ♡</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Proyecto de innovación alimentaria</span>
+          <h1>Una nube de sabor.<br><em>Color con propósito.</em></h1>
+          <p class="hero-text">Conoce <strong>BetaNube</strong>: nuestro proyecto de malvaviscos coloreados con pigmentos naturales recuperados de la <strong>cáscara de betarraga</strong>. Una propuesta que combina confitería, ciencia y aprovechamiento de subproductos.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#descubre">Descubrir BetaNube <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-light" href="#valorizacion">¿Por qué la cáscara?</a>
+          </div>
+          <ul class="hero-tags" aria-label="Características del proyecto">
+            <li>🌿 Pigmento de origen vegetal</li><li>🧪 Investigación aplicada</li><li>♻️ Valorización de cáscara</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-brand-card">
+            <img class="hero-wordmark" src="assets/beta_wordmark_heart.webp" alt="Logotipo BetaNube, tipografía de nube y corazón" width="512" height="200" fetchpriority="high">
+            <div class="hero-real-photos">
+              <img src="assets/04_batido_final.webp" alt="Mezcla rosada al final del batido en el laboratorio" width="811" height="1080">
+              <div class="hero-side-photos">
+                <img src="assets/09_extr_seca.webp" alt="Extractos T3 y T4 preparados en vasos de laboratorio" width="1125" height="843">
+                <img src="assets/11_cascaras.webp" alt="Cáscaras de betarraga aprovechadas para extraer el pigmento" width="810" height="1080">
+              </div>
+            </div>
+            <span class="hero-real-caption">Fotografías reales del ensayo · EXPOFIAL 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="descubre">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="kicker">Conoce nuestro producto</span>
+          <h2>Más que un malvavisco</h2>
+          <p>BetaNube transforma una pregunta sencilla en un proyecto alimentario: ¿podemos aprovechar el color de una cáscara que suele descartarse?</p>
+        </div>
+        <div class="three">
+          <article class="info-card"><span class="round-icon" aria-hidden="true">🌱</span><h3>Origen vegetal</h3><p>El color se obtiene de betalaínas presentes en la cáscara de betarraga (<em>Beta vulgaris</em> L.).</p></article>
+          <article class="info-card"><span class="round-icon" aria-hidden="true">♻️</span><h3>Valorización de residuos</h3><p>En lugar de desechar la cáscara obtenida durante el pelado, se aprovecha como materia prima para recuperar pigmentos.</p></article>
+          <article class="info-card"><span class="round-icon" aria-hidden="true">🍬</span><h3>Aplicación real</h3><p>Para la degustación se empleó el extracto T3 por disponibilidad; ello no determina cuál tratamiento recuperó más pigmento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section residue-section impact-section" id="valorizacion">
+      <div class="wrap">
+        <div class="impact-intro">
+          <span class="kicker">Economía circular · residuos con valor</span>
+          <h2>Lo que se descarta <em>todavía tiene color.</em></h2>
+          <p>El pelado y procesamiento de la betarraga generan residuos vegetales. La cáscara conserva <strong>betalaínas</strong>, pigmentos naturales que en BetaNube recuperamos y aplicamos a nuestros malvaviscos. ¿Qué magnitud puede tener este subproducto?</p>
+        </div>
+
+        <figure class="impact-photo">
+          <img src="assets/12_residuos_industriales_ilustracion.webp" loading="lazy" alt="Representación ilustrativa de cáscaras de betarraga acumuladas durante una operación de procesamiento de hortalizas" />
+          <div class="impact-photo-shade" aria-hidden="true"></div>
+          <div class="impact-photo-copy"><span>DEL DESCARTE AL APROVECHAMIENTO</span><strong>Una cáscara también puede convertirse en ingrediente.</strong></div>
+          <figcaption>Imagen ilustrativa generada digitalmente para representar la acumulación de cáscaras; no es una fotografía de una fábrica real ni del laboratorio de BetaNube.</figcaption>
+        </figure>
+
+        <div class="impact-stats" aria-label="Datos publicados y datos experimentales sobre residuos de betarraga">
+          <article class="impact-stat">
+            <span class="stat-tag">Literatura científica · pelado</span>
+            <strong>134 kg</strong>
+            <h3>de cáscara por tonelada</h3>
+            <p>Estimación extrapolada de un ensayo de pelado de betarraga; depende del espesor retirado y del proceso empleado.</p>
+            <a href="https://doi.org/10.15586/ijfs.v36i1.2438" target="_blank" rel="noopener noreferrer">Shakir y Vincenzi (2024)</a>
+          </article>
+          <article class="impact-stat">
+            <span class="stat-tag">Literatura científica · subproductos</span>
+            <strong>35–40 %</strong>
+            <h3>de biomasa en subproductos</h3>
+            <p>Estimación de una revisión para el <strong>conjunto de cáscaras, orujo y pulpa</strong> de betarraga. No representa exclusivamente cáscaras.</p>
+            <a href="https://doi.org/10.3390/foods15081432" target="_blank" rel="noopener noreferrer">Revisión científica (2026)</a>
+          </article>
+          <article class="impact-stat impact-stat-project">
+            <span class="stat-tag">BetaNube · cálculo con datos propios</span>
+            <strong>≈84,8 %</strong>
+            <h3>menos masa tras el secado</h3>
+            <p>Reducción <strong>teórica</strong> de masa por retirada de agua, calculada con las humedades medidas. No es una medición de reducción de volumen.</p>
+            <a href="#comparacion-humedad">Ver datos de humedad ↓</a>
+          </article>
+        </div>
+
+        <div class="impact-proof-grid">
+          <figure class="impact-realphoto">
+            <img src="assets/11_cascaras.webp" alt="Fotografía real de las cáscaras de betarraga separadas durante el experimento BetaNube" loading="lazy">
+            <figcaption><span class="evidence-dot" aria-hidden="true"></span> Fotografía real del proyecto: cáscaras separadas para los ensayos de extracción.</figcaption>
+          </figure>
+          <div class="impact-why">
+            <span class="eyebrow soft-eyebrow">Del residuo a una materia prima</span>
+            <h3>¿Por qué elegir cáscara seca y molida?</h3>
+            <p>El secado retira gran parte del agua del residuo y la molienda facilita la dosificación. Esto puede simplificar su almacenamiento y reducir condiciones favorables al deterioro microbiano, siempre que el material se conserve bien envasado y protegido de la humedad.</p>
+            <div class="moisture-evidence" id="comparacion-humedad">
+              <div class="moisture-title"><span class="check-icon" aria-hidden="true">✓</span><strong>Humedad medida en BetaNube</strong></div>
+              <div class="moisture-measure"><div class="moisture-label"><span>Cáscara fresca</span><strong>85,48 %</strong></div><div class="meter-track"><span class="meter-fresh" style="width:85.48%"></span></div></div>
+              <div class="moisture-measure"><div class="moisture-label"><span>Cáscara seca</span><strong>4,57 %</strong></div><div class="meter-track"><span class="meter-dry" style="width:4.57%"></span></div></div>
+              <p class="moisture-caption">Si 1 kg de cáscara fresca conserva su materia seca y termina con 4,57 % de humedad, resultan aproximadamente <strong>152 g de cáscara seca</strong> (cálculo teórico, no rendimiento pesado del lote).</p>
+            </div>
+            <div class="impact-benefits">
+              <div><span aria-hidden="true">📦</span><strong>Menos masa para almacenar</strong><small>Potencial reducción del espacio requerido; el volumen físico no se midió.</small></div>
+              <div><span aria-hidden="true">🛡️</span><strong>Menor riesgo de deterioro</strong><small>Depende del envase, higiene y condiciones de almacenamiento; aún no se determinó la vida útil.</small></div>
+              <div><span aria-hidden="true">⚖️</span><strong>Dosificación más sencilla</strong><small>El material molido facilita el pesado para nuevas extracciones.</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="impact-process">
+          <figure>
+            <img src="assets/09_extr_seca.webp" alt="Registro real de los extractos T3 y T4 elaborados con cáscara seca de betarraga" loading="lazy" />
+            <figcaption>Extractos de los tratamientos T3 y T4 · fotografía real del proyecto</figcaption>
+          </figure>
+          <div><span class="stat-tag">El resultado del aprovechamiento</span><h3>De la cáscara seca al pigmento.</h3><p>Tras el secado, la cáscara se molió y se sometió a extracción acuosa ajustada a pH 4. Los pigmentos obtenidos permitieron desarrollar BetaNube. La degustación pública utilizó extracto T3 por disponibilidad; T4 mostró el mayor contenido estimado de betalaínas.</p></div>
+        </div>
+        <p class="impact-footnote"><strong>Cómo leer las cifras:</strong> 134 kg/t proviene de un ensayo publicado y 35–40 % se refiere a varios subproductos, no a cáscara exclusivamente. El 84,8 % es una estimación de reducción de masa calculada a partir de las humedades de BetaNube y supone conservación de materia seca. No se han cuantificado pérdidas industriales reales, reducción volumétrica ni vida útil del material seco.</p>
+        <div class="cycle-ribbon" aria-label="Ruta de valorización">
+          <span>Cáscara residual</span><span aria-hidden="true">→</span><span>Secado y molienda</span><span aria-hidden="true">→</span><span>Extracción de betalaínas</span><span aria-hidden="true">→</span><span>BetaNube</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="value-band" aria-label="Nuestra propuesta">
+      <div class="wrap value-grid">
+        <h2>De la cáscara al color.</h2><span class="symbol" aria-hidden="true">✦</span>
+        <p>Valorizamos un residuo alimentario mediante su aprovechamiento como fuente de color para confitería.</p>
+      </div>
+    </section>
+
+    <section class="section process" id="proceso">
+      <div class="wrap">
+        <div class="section-heading"><span class="kicker">Nuestro proceso</span><h2>¿Cómo nace BetaNube?</h2><p>Un recorrido sencillo por las operaciones principales, desde la materia prima hasta el malvavisco.</p></div>
+        <div class="steps" role="list">
+          <article class="step" role="listitem"><span class="step-num">01</span><div class="step-emoji" aria-hidden="true">🥬</div><h3>Selección</h3><p>Lavado y acondicionamiento de cáscara fresca o seca de betarraga.</p></article>
+          <article class="step" role="listitem"><span class="step-num">02</span><div class="step-emoji" aria-hidden="true">💧</div><h3>Extracción acuosa</h3><p>Extracción con agua ajustada a pH 4 usando ácido cítrico, a 40 o 50 °C según tratamiento.</p></article>
+          <article class="step" role="listitem"><span class="step-num">03</span><div class="step-emoji" aria-hidden="true">🔬</div><h3>Cuantificación</h3><p>Estimación de betacianinas y betaxantinas mediante UV-Vis.</p></article>
+          <article class="step" role="listitem"><span class="step-num">04</span><div class="step-emoji" aria-hidden="true">🎨</div><h3>Selección del pigmento</h3><p>Comparación preliminar de betalaínas; en la degustación se utilizó T3 por disponibilidad de extracto.</p></article>
+          <article class="step" role="listitem"><span class="step-num">05</span><div class="step-emoji" aria-hidden="true">☁️</div><h3>Malvaviscos</h3><p>Incorporación del extracto, elaboración del producto y evaluación del color.</p></article>
+        </div>
+        <p class="process-note">Los registros fotográficos documentan el proceso realizado. El estudio de estabilidad del color durante el almacenamiento continúa pendiente de completarse.</p>
+      </div>
+    </section>
+
+    <section class="section photo-section" id="galeria">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="kicker">Bitácora fotográfica</span><h2>Así fue nuestro trabajo en laboratorio</h2>
+          <p>Estas 11 fotografías provienen del registro compartido por el equipo. Selecciona una para ampliarla y conocer la etapa que documenta.</p>
+        </div>
+        <div class="gallery-filters" role="group" aria-label="Filtrar las fotografías">
+          <button type="button" class="gallery-filter active" data-filter="all" aria-pressed="true">Todas (11)</button>
+          <button type="button" class="gallery-filter" data-filter="extraccion" aria-pressed="false">Extracción</button>
+          <button type="button" class="gallery-filter" data-filter="elaboracion" aria-pressed="false">Elaboración</button>
+          <button type="button" class="gallery-filter" data-filter="analisis" aria-pressed="false">Medición</button>
+        </div>
+        <div class="photo-grid" id="photoGrid">
+          <button type="button" class="photo-card" data-category="extraccion" data-photo="0" aria-label="Ampliar fotografía: Acondicionamiento de cáscaras">
+            <img src="assets/11_cascaras.webp" alt="Acondicionamiento de cáscaras" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Acondicionamiento de cáscaras</strong><small>Materia prima</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="extraccion" data-photo="1" aria-label="Ampliar fotografía: Extractos T1 y T2">
+            <img src="assets/06_extr_fresca.webp" alt="Extractos T1 y T2" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Extractos T1 y T2</strong><small>Extracción, cáscara fresca</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="extraccion" data-photo="2" aria-label="Ampliar fotografía: Extractos T3 y T4">
+            <img src="assets/09_extr_seca.webp" alt="Extractos T3 y T4" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Extractos T3 y T4</strong><small>Extracción, cáscara seca</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="extraccion" data-photo="3" aria-label="Ampliar fotografía: Filtrado">
+            <img src="assets/10_filtrado.webp" alt="Filtrado" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Filtrado</strong><small>Separación sólido–líquido</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="4" aria-label="Ampliar fotografía: Total de insumos utilizados">
+            <img src="assets/07_insumos.webp" alt="Total de insumos utilizados" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Total de insumos utilizados</strong><small>Ingredientes del ensayo</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="5" aria-label="Ampliar fotografía: Mezcla inicial de agua, azúcar y glucosa">
+            <img src="assets/01_jarabe.webp" alt="Mezcla inicial de agua, azúcar y glucosa" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Mezcla inicial de agua, azúcar y glucosa</strong><small>Preparación del jarabe</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="6" aria-label="Ampliar fotografía: Gelatina hidratada con solución coloreada">
+            <img src="assets/02_gelatina.webp" alt="Gelatina hidratada con solución coloreada" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Gelatina hidratada con solución coloreada</strong><small>Incorporación de pigmento</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="7" aria-label="Ampliar fotografía: Batido">
+            <img src="assets/03_batido.webp" alt="Batido" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Batido</strong><small>Formación de espuma</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="8" aria-label="Ampliar fotografía: Punto final del batido">
+            <img src="assets/04_batido_final.webp" alt="Punto final del batido" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Punto final del batido</strong><small>Mezcla rosada</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="elaboracion" data-photo="9" aria-label="Ampliar fotografía: Moldeado">
+            <img src="assets/05_moldeado.webp" alt="Moldeado" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Moldeado</strong><small>Conformación del malvavisco</small></span>
+          </button>
+          <button type="button" class="photo-card" data-category="analisis" data-photo="10" aria-label="Ampliar fotografía: Medición de color en las muestras">
+            <img src="assets/08_colorimetria.webp" alt="Medición de color en las muestras" loading="lazy" decoding="async">
+            <span class="photo-caption"><strong>Medición de color en las muestras</strong><small>Registro instrumental</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ciencia">
+      <div class="wrap science-layout">
+        <div class="science-intro">
+          <span class="kicker">La ciencia detrás del rosa</span>
+          <h2>Cuatro tratamientos.<br>Una decisión basada en datos.</h2>
+          <p>Se compararon dos estados de la cáscara —<strong>fresca y seca</strong>— y dos temperaturas de extracción —<strong>40 y 50 °C</strong>—. En los cuatro tratamientos el agua de extracción se ajustó a <strong>pH 4 con ácido cítrico</strong>. La comparación de betalaínas es preliminar. La materia prima seca y molida ofrece ventajas potenciales de manejo y almacenamiento, pero ello no equivale a demostrar mayor estabilidad del pigmento.</p>
+          <div class="treatments">
+            <div class="treatment"><strong>T1 · Fresca</strong>50 °C · pH 4</div>
+            <div class="treatment"><strong>T2 · Fresca</strong>40 °C · pH 4</div>
+            <div class="treatment"><strong>T3 · Seca</strong>50 °C · pH 4</div>
+            <div class="treatment"><strong>T4 · Seca</strong>40 °C · pH 4</div>
+          </div>
+          <p style="font-size:.83rem;margin-top:22px">Las betalaínas comprenden principalmente <strong>betacianinas</strong> (rojizas-violetas) y <strong>betaxantinas</strong> (amarillentas). Sus concentraciones se estimaron mediante UV-Vis, utilizando los factores de dilución registrados para cada tratamiento.</p>
+        </div>
+        <div class="data-card" aria-label="Resultados de extracción preliminares">
+          <div class="data-head">
+            <div><span class="data-kicker">Resultados preliminares</span><h3>Comparación de extracción</h3></div>
+            <div class="segmented" role="group" aria-label="Unidad de comparación">
+              <button id="metricDry" type="button" aria-pressed="true">mg/g bs</button>
+              <button id="metricLiter" type="button" aria-pressed="false">mg/L</button>
+            </div>
+          </div>
+          <p style="color:var(--muted);font-size:.84rem;line-height:1.6;margin:10px 0 0">Estimaciones de betalaínas totales derivadas de las lecturas UV-Vis y factores de dilución reportados en el ensayo.</p>
+          <div class="chartrows" id="chartRows" aria-live="polite"></div>
+          <details class="pigment-details"><summary>Ver betacianinas y betaxantinas por tratamiento</summary>
+            <div class="table-scroll"><table class="scientific-table"><thead><tr><th>Tratamiento</th><th>Betacianinas (mg/L)</th><th>Betaxantinas (mg/L)</th><th>Total (mg/L)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">T1</th><td>16,30</td><td>13,93</td><td>30,22</td></tr>
+                <tr><th scope="row">T2</th><td>39,97</td><td>36,19</td><td>76,16</td></tr>
+                <tr><th scope="row">T3</th><td>563,09</td><td>483,54</td><td>1046,63</td></tr>
+                <tr><th scope="row">T4</th><td>726,78</td><td>595,83</td><td>1322,61</td></tr>
+              </tbody>
+            </table></div>
+            <p>Resultados obtenidos anteriormente a partir de las absorbancias y diluciones suministradas por el equipo. Estimaciones espectrofotométricas sin corrección adicional de interferencias.</p>
+          </details>
+          <div class="best-note"><strong>T4</strong> registró el mayor contenido de betalaínas <strong>estimado</strong> en los cálculos preliminares. Para la degustación se empleó <strong>T3</strong> por disponibilidad de extracto, no por haber sido el tratamiento de mayor contenido.</div>
+          <p class="method-note">*bs = base seca. Para mg/g bs se asumió densidad del extracto de 1 g/mL, sin corrección de interferencias espectrales y con los datos disponibles. Las masas de cáscara utilizadas variaron entre tratamientos y se estimó densidad del extracto de 1 g/mL. Los valores no prueban por sí solos diferencias causadas exclusivamente por la temperatura o el estado de la materia prima, ni equivalen a una prueba de estabilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section color-section" id="colorimetria">
+      <div class="wrap">
+        <div class="section-heading"><span class="kicker">Colorimetría CIELAB · datos en desarrollo</span>
+          <h2>¿Qué color obtuvimos?</h2>
+          <p>Valores de color L*, a* y b* registrados para los malvaviscos y sus extractos. Para los extractos T3 y T4 se calcularon promedios aritméticos de tres lecturas; T1 y T2 corresponden a una lectura nueva por tratamiento. Estas mediciones no representan todavía un ensayo de estabilidad durante el almacenamiento.</p>
+        </div>
+        <div class="color-layout">
+          <div class="color-panel">
+            <h3>Malvaviscos · medición inicial</h3>
+            <div class="table-scroll">
+              <table class="scientific-table"><thead><tr><th>Tratamiento</th><th>n</th><th>L*</th><th>a*</th><th>b*</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">T1 · fresca, 50 °C</th><td>2</td><td>69,53</td><td>9,66</td><td>6,92</td></tr>
+                  <tr><th scope="row">T2 · fresca, 40 °C</th><td>2</td><td>56,34</td><td>18,47</td><td>8,79</td></tr>
+                  <tr class="tasting-row"><th scope="row">T3 · seca, 50 °C ♡</th><td>3</td><td>60,43</td><td>27,25</td><td>0,47</td></tr>
+                  <tr><th scope="row">T4 · seca, 40 °C</th><td>3</td><td>70,67</td><td>17,39</td><td>3,94</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="color-footnote">n = lecturas disponibles. T3 fue el tratamiento usado para degustación. Los datos de T1 y T2 contienen solo dos lecturas por tratamiento.</p>
+          </div>
+          <div class="color-panel">
+            <h3>Extractos · color instrumental</h3><p class="color-footnote">Resultados CIELAB de T1–T4; los promedios son únicamente para T3 y T4.</p>
+            <div class="table-scroll">
+              <table class="scientific-table"><thead><tr><th>Tratamiento</th><th>n</th><th>L*</th><th>a*</th><th>b*</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">T1 · fresca, 50 °C</th><td>1</td><td>40,45</td><td>−0,05</td><td>1,00</td></tr>
+                  <tr><th scope="row">T2 · fresca, 40 °C</th><td>1</td><td>26,79</td><td>5,39</td><td>1,59</td></tr>
+                  <tr><th scope="row">T3 · seca, 50 °C</th><td>3</td><td>22,18</td><td>0,51</td><td>1,67</td></tr>
+                  <tr><th scope="row">T4 · seca, 40 °C</th><td>3</td><td>22,14</td><td>0,57</td><td>1,73</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="color-footnote"><strong>n</strong> = número de lecturas. T3 y T4: promedio de tres registros del Excel (redondeado a dos decimales). T1 y T2: una lectura comunicada por el equipo (28/10/2026); el valor escrito como «−005» para a* de T1 se interpretó provisionalmente como −0,05. No se dispone aún de mediciones temporales de estabilidad.</p>
+          </div>
+        </div>
+        <div class="science-legend"><strong>Cómo leer CIELAB:</strong> L* indica luminosidad; a* positivo corresponde a la dirección roja; b* positivo a la amarilla. Para evaluar estabilidad deben medirse los mismos tratamientos en distintos tiempos y calcularse sus diferencias de color.</div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="producto">
+      <div class="wrap product-layout">
+        <div class="product-art" role="img" aria-label="Ilustración estilizada de dos malvaviscos rosados">
+          <span class="floating-ingredient">Color inspirado en la betarraga ♡</span>
+          <span class="puff"><small>✦</small></span><span class="puff second" aria-hidden="true"><small>✦</small></span>
+        </div>
+        <div class="product-copy">
+          <span class="kicker">Del laboratorio a la degustación</span>
+          <h2>Un malvavisco con una historia que contar</h2>
+          <p>La propuesta es elaborar un malvavisco con <strong>colorante natural a partir de cáscara de betarraga</strong>, utilizando para la degustación el extracto del <strong>tratamiento T3</strong>, debido a su disponibilidad.</p>
+          <ul class="ticks">
+            <li><i>✓</i> Pigmento obtenido de una fuente vegetal.</li>
+            <li><i>✓</i> El grupo realizó la extracción y elaboración de malvaviscos.</li>
+            <li><i>✓</i> Mediciones iniciales de color; falta completar el seguimiento durante almacenamiento.</li>
+          </ul>
+          <p style="font-size:.8rem">Nota: la formulación definitiva, los alérgenos, la conservación y la vida útil deben verificarse antes de presentar una etiqueta comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="wrap">
+        <div class="section-heading"><span class="kicker">Respuestas rápidas</span><h2>Preguntas que pueden surgir</h2></div>
+        <div class="faq-grid">
+          <details><summary>¿Qué impacto tienen los residuos de betarraga?</summary><p>En un estudio de pelado se estimaron 134 kg de cáscaras por tonelada de betarraga; otra revisión presenta 35–40 % de subproductos en conjunto (cáscaras, orujo y pulpa). Estas cifras varían con el proceso y no representan residuos medidos en BetaNube. En nuestro proyecto, la cáscara se valorizó recuperando betalaínas.</p></details>
+        <details><summary>¿Por qué valorizar la cáscara seca de betarraga?</summary><p>Porque aprovechamos un residuo y, al reducir su humedad, la cáscara molida puede manejarse y almacenarse con mayor facilidad. En el ensayo se midió 85,48 % de humedad para la cáscara fresca y 4,57 % para la seca. Las ventajas de espacio y conservación son potenciales: requieren envase adecuado y no sustituyen una prueba de vida útil.</p></details>
+        <details><summary>¿Qué son las betalaínas?</summary><p>Son pigmentos naturales hidrosolubles presentes en diversas plantas, incluida la betarraga. Entre ellos se encuentran las betacianinas y las betaxantinas.</p></details>
+          <details><summary>¿Por qué aprovechar la cáscara?</summary><p>La cáscara es una fracción generada durante el acondicionamiento de la betarraga. El proyecto explora su valor como fuente de pigmentos antes de descartarla.</p></details>
+          <details><summary>¿Qué están midiendo?</summary><p>Se cuantificaron las betalaínas en los extractos y se registraron mediciones colorimétricas iniciales de los malvaviscos. El estudio de cambios de color durante almacenamiento aún no está completo.</p></details>
+          <details><summary>¿Color natural significa que es más saludable?</summary><p>No necesariamente. El origen natural del pigmento no demuestra por sí solo que el malvavisco tenga beneficios para la salud; es un producto de confitería.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section taste" id="degustacion">
+      <div class="wrap taste-layout">
+        <div>
+          <span class="kicker">Tu experiencia también cuenta</span>
+          <h2>¿Qué te pareció BetaNube?</h2>
+          <p>La degustación se realizó con malvaviscos elaborados con <strong>extracto T3</strong> por disponibilidad de pigmento. Durante la presentación, una encuesta breve puede recoger impresiones sobre <strong>color, sabor y textura</strong>. Esta página incluye una demostración visual del formulario; para recopilar respuestas de todos los visitantes, deberá conectarse a una herramienta como Google Forms.</p>
+          <a class="btn btn-light" href="#inicio">Volver a conocer la marca ↑</a>
+        </div>
+        <div class="taste-card">
+          <h3>Mini encuesta de degustación ♡</h3>
+          <span id="demoNotice" class="demo-note">Versión de demostración: las respuestas no se envían a un servidor. Para la feria, enlaza aquí tu formulario oficial.</span>
+          <div id="surveyFormArea">
+            <form id="tasteForm">
+              <div class="form-field"><label for="sabor">¿Cómo calificarías el sabor?</label><select id="sabor" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
+              <div class="form-field"><label for="color">¿Qué te pareció el color?</label><select id="color" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
+              <div class="form-field"><label for="textura">¿Cómo calificarías la textura?</label><select id="textura" required><option value="">Selecciona una opción</option><option value="5">5 · Me encantó</option><option value="4">4 · Me gustó</option><option value="3">3 · Regular</option><option value="2">2 · Me gustó poco</option><option value="1">1 · No me gustó</option></select></div>
+              <button class="btn" type="submit">Enviar valoración de prueba ♡</button>
+            </form>
+            <div id="thankYou" class="thankyou" role="status" aria-live="polite">¡Gracias por probar la experiencia! Esta es una demostración: la valoración no se almacenó ni se envió a los organizadores. <button id="again" type="button" class="btn btn-light" style="margin-top:12px;font-size:.8rem">Responder otra vez</button></div>
+          </div>
+          <a id="realSurvey" class="btn" href="#" target="_blank" rel="noopener noreferrer" style="display:none;width:100%">Abrir encuesta oficial ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="references" id="referencias">
+      <div class="wrap">
+        <h2>Referencias para conocer más</h2>
+        <p><strong>Shakir y Vincenzi (2024).</strong> <em>Estimation of betalain content in beetroot peel powder.</em> Italian Journal of Food Science, 36(1), 53–57. Reporta una extrapolación de 134,3 kg de cáscara por tonelada de raíz bajo las condiciones de pelado del estudio. <a href="https://doi.org/10.15586/ijfs.v36i1.2438" target="_blank" rel="noopener noreferrer">Consultar artículo</a>.</p>
+        <p><strong>Valorization of Agri-Food Waste from Pigment-Rich Root Vegetable in Integrated EU Biorefinery Systems (2026).</strong> Foods, 15(8), 1432. Revisión que presenta un intervalo de 35–40 % de subproductos de betarraga (cáscaras, orujo y pulpa conjuntamente). <a href="https://doi.org/10.3390/foods15081432" target="_blank" rel="noopener noreferrer">Consultar revisión</a>.</p>
+        <p><strong>Farhan et al. (2024).</strong> <em>Assessment of Beetroot powder as nutritional, antioxidant, and sensory evaluation in candies.</em> Journal of Agriculture and Food Research, 15, 101023. <a href="https://doi.org/10.1016/j.jafr.2024.101023" target="_blank" rel="noopener noreferrer">Consultar artículo</a>. Estudio sobre betarraga en caramelos duros; no es un estudio sobre BetaNube.</p>
+        <p><strong>Tarasevičienė et al. (2024).</strong> <em>Chemical Content and Color of Dried Organic Beetroot Powder Affected by Different Drying Methods.</em> Horticulturae, 10(7), 733. <a href="https://doi.org/10.3390/horticulturae10070733" target="_blank" rel="noopener noreferrer">Consultar artículo</a>. Revisión de propiedades del polvo y efectos del secado, sin ser parte de las mediciones de BetaNube.</p>
+        <p><strong>Kaur y Singh (2016).</strong> <em>Effect of Packaging Material and Storage Conditions on Quality of Beetroot Powder.</em> Agricultural Research Journal, 53(3), 400–406. <a href="https://doi.org/10.5958/2395-146X.2016.00076.4" target="_blank" rel="noopener noreferrer">Consultar artículo</a>. Fundamenta la importancia del envasado para conservar la calidad.</p>
+        <p><strong>de Avelar et al. (2019).</strong> <em>A byproduct of uvaia processing as a natural source for coloring sugar hard-panning confections.</em> Journal of Food Process Engineering, e13250. <a href="https://doi.org/10.1111/jfpe.13250" target="_blank" rel="noopener noreferrer">Consultar artículo</a>. Antecedente sobre valorización y coloración en confitería, con un producto diferente.</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-grid"><div><div class="footer-brand">BetaNube ☁</div><p>Proyecto académico de Tecnologías de Extracción · EXPOFIAL 2026</p></div><a class="top-link" href="#inicio">Volver al inicio ↑</a></div></footer>
+  <dialog id="photoDialog" class="photo-dialog" aria-label="Fotografía ampliada">
+    <button class="photo-dialog-close" type="button" aria-label="Cerrar fotografía">×</button>
+    <img id="photoLarge" alt="Fotografía de laboratorio ampliada">
+    <div class="photo-dialog-footer"><div><strong id="photoTitle"></strong><span id="photoSubtitle"></span></div>
+      <div class="photo-dialog-buttons"><button type="button" id="photoPrev" aria-label="Fotografía anterior">←</button><button type="button" id="photoNext" aria-label="Fotografía siguiente">→</button></div>
+    </div>
+  </dialog>
+  <script>
+    'use strict';
+    // Para activar un enlace real a una encuesta pública, coloca aquí la URL de tu Google Forms.
+    const ENCUESTA_URL = '';
+    const dry = [2.07,5.21,10.73,13.36];
+    const liter = [30.22,76.16,1046.63,1322.61];
+    const fmt = n => n.toLocaleString('es-PE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const chart = document.querySelector('#chartRows');
+    const metricDry = document.querySelector('#metricDry');
+    const metricLiter = document.querySelector('#metricLiter');
+    function drawChart(mode){
+      const values=mode==='dry'?dry:liter, max=Math.max(...values), unit=mode==='dry'?'mg/g bs':'mg/L';
+      chart.innerHTML=values.map((value,i)=>`<div class="chartrow"><div class="chart-label"><span>T${i+1}${i===3?' · Mayor valor estimado':i===2?' · Degustación':''}</span><span class="numeric">${fmt(value)} ${unit}</span></div><div class="track" role="img" aria-label="Tratamiento T${i+1}: ${fmt(value)} ${unit}"><div class="bar ${i===3?'best':''}" style="width:${(100*value/max).toFixed(2)}%"></div></div></div>`).join('');
+      metricDry.setAttribute('aria-pressed',String(mode==='dry'));
+      metricLiter.setAttribute('aria-pressed',String(mode==='liter'));
+    }
+    metricDry.addEventListener('click',()=>drawChart('dry'));
+    metricLiter.addEventListener('click',()=>drawChart('liter'));
+    drawChart('dry');
+    // Galería: fotografías auténticas del documento proporcionado por el equipo.
+    const photoItems = Array.from(document.querySelectorAll('.photo-card'));
+    const photoDialog = document.getElementById('photoDialog');
+    const photoLarge = document.getElementById('photoLarge');
+    const photoTitle = document.getElementById('photoTitle');
+    const photoSubtitle = document.getElementById('photoSubtitle');
+    let visibleItems = photoItems.slice();
+    let activePhoto = 0;
+    document.querySelectorAll('.gallery-filter').forEach(button=>button.addEventListener('click',()=>{
+      const filter=button.dataset.filter;
+      document.querySelectorAll('.gallery-filter').forEach(b=>{
+        const on=b===button;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));
+      });
+      photoItems.forEach(item=>{item.hidden=!(filter==='all'||item.dataset.category===filter)});
+      visibleItems=photoItems.filter(item=>!item.hidden);
+    }));
+    function setPhoto(position){
+      activePhoto=(position+visibleItems.length)%visibleItems.length;
+      const item=visibleItems[activePhoto];if(!item)return;
+      const small=item.querySelector('img');
+      photoLarge.src=small.src;photoLarge.alt=small.alt;
+      photoTitle.textContent=item.querySelector('strong').textContent;
+      photoSubtitle.textContent=item.querySelector('small').textContent;
+    }
+    photoItems.forEach(item=>item.addEventListener('click',()=>{
+      setPhoto(visibleItems.indexOf(item));photoDialog.showModal();
+    }));
+    document.querySelector('.photo-dialog-close').addEventListener('click',()=>photoDialog.close());
+    document.getElementById('photoPrev').addEventListener('click',()=>setPhoto(activePhoto-1));
+    document.getElementById('photoNext').addEventListener('click',()=>setPhoto(activePhoto+1));
+    photoDialog.addEventListener('click',e=>{if(e.target===photoDialog)photoDialog.close()});
+    photoDialog.addEventListener('keydown',e=>{
+      if(e.key==='ArrowRight')setPhoto(activePhoto+1);
+      if(e.key==='ArrowLeft')setPhoto(activePhoto-1);
+    });
+    const menuToggle=document.getElementById('menuToggle'),menu=document.getElementById('mainNav');
+    menuToggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');menuToggle.textContent=open?'✕':'☰';});
+    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');menuToggle.textContent='☰';}));
+    if(ENCUESTA_URL.trim()){
+      const link=document.getElementById('realSurvey');link.href=ENCUESTA_URL;link.style.display='inline-flex';
+      document.getElementById('surveyFormArea').style.display='none';
+      document.getElementById('demoNotice').textContent='Responde la encuesta de degustación en el formulario oficial del proyecto.';
+    }else{
+      document.getElementById('tasteForm').addEventListener('submit',(event)=>{
+        event.preventDefault();
+        if(!event.currentTarget.reportValidity())return;
+        event.currentTarget.style.display='none';document.getElementById('thankYou').style.display='block';
+      });
+      document.getElementById('again').addEventListener('click',()=>{
+        document.getElementById('tasteForm').reset();document.getElementById('tasteForm').style.display='block';document.getElementById('thankYou').style.display='none';
+      });
+    }
+  </script>
+</body>
+</html>
